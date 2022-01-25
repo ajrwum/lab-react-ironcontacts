@@ -28,6 +28,80 @@
   color: #61dafb;
 }
 
+button {
+  border: none;
+  border-radius: 10px;
+  margin: .5rem;
+  padding: .5rem 1rem;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem auto;
+}
+
+.add button {
+  background-color: goldenrod;
+  border-radius: 2px solid darkgoldenrod;
+}
+
+.add button:hover {
+  background-color: gold;
+}
+
+.sort button {
+  background-color: lightskyblue;
+  border-radius: 2px solid dodgerblue;
+}
+
+.sort button:hover {
+  background-color: darkturquoise;
+}
+
+.delete button {
+  background-color: gainsboro;
+  border-radius: 2px solid red;
+}
+
+.delete button:hover {
+  background-color: darkred;
+  color: white;
+}
+
+.sort {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.contacts {
+  display: flex;
+  justify-content: center;
+}
+
+th {
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+
+.left {
+  text-align: left;
+}
+
+td.name {
+  font-weight: bold;
+  padding-left: 2rem;
+}
+
+.pic {
+  height: 80px;
+  width: 80px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
