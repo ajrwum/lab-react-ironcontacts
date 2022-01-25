@@ -10,8 +10,15 @@ function App() {
   const addRandomContact = () => {
     // console.log('--- --- add random contact');
     const contactPool = contactsJson.slice(5);
-    const randomIdx = Math.floor(Math.random() * contactPool.length);
-    // console.log('contactPool[randomIdx] :>> ', contactPool[randomIdx]);
+    const contactsIds = contacts.map(el => el.id);
+    let newContact;
+    let randomIdx;
+    do {
+      randomIdx = Math.floor(Math.random() * contactPool.length);
+      // console.log('contactPool[randomIdx] :>> ', contactPool[randomIdx]);
+      newContact = contactPool[randomIdx];
+    }
+    while (contactsIds.includes(newContact.id))
 
     const bufferArr = [...contacts];
     bufferArr.push(contactPool[randomIdx]);
